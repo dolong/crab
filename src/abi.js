@@ -1,5 +1,5 @@
 module.exports = {
-  crabABI: [
+  corruptionABI: [
     { inputs: [], stateMutability: "nonpayable", type: "constructor" },
     {
       anonymous: false,
@@ -123,29 +123,18 @@ module.exports = {
     },
     {
       inputs: [{ internalType: "uint256", name: "tokenId", type: "uint256" }],
-      name: "getBackground",
-      outputs: [{ internalType: "string", name: "", type: "string" }],
+      name: "insight",
+      outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
       stateMutability: "view",
       type: "function",
     },
     {
       inputs: [{ internalType: "uint256", name: "tokenId", type: "uint256" }],
-      name: "getClaw",
-      outputs: [{ internalType: "string", name: "", type: "string" }],
-      stateMutability: "view",
-      type: "function",
-    },
-    {
-      inputs: [{ internalType: "uint256", name: "tokenId", type: "uint256" }],
-      name: "getLeg",
-      outputs: [{ internalType: "string", name: "", type: "string" }],
-      stateMutability: "view",
-      type: "function",
-    },
-    {
-      inputs: [{ internalType: "uint256", name: "tokenId", type: "uint256" }],
-      name: "getShell",
-      outputs: [{ internalType: "string", name: "", type: "string" }],
+      name: "insightMap",
+      outputs: [
+        { internalType: "uint256", name: "savedXP", type: "uint256" },
+        { internalType: "uint256", name: "lastSaveBlock", type: "uint256" }
+      ],
       stateMutability: "view",
       type: "function",
     },

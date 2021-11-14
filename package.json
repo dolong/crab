@@ -1,9 +1,12 @@
 {
-  "name": "crab",
-  "version": "0.1.2",
-  "description": "crab.js is a library that allow you to interact with crab and more crab contracts.",
+  "name": "@whaledrop/corruptiontest",
+  "version": "0.1.4",
+  "description": "Corruption.js is a library that allow you to interact with Corruption contracts.",
   "source": "./src/index.js",
   "main": "./src/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,7 +15,7 @@
     "url": ""
   },
   "keywords": [
-    "crab",
+    "Corruption",
     "ethereum",
     "nft"
   ],
@@ -23,6 +26,7 @@
     "ethers": "5.4.x"
   },
   "dependencies": {
+    "base-64": "^1.0.0",
     "ethers": "^5.4.7",
     "src": "^1.1.2"
   },
